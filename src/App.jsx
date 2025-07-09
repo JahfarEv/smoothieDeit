@@ -41,35 +41,40 @@ const SmoothieDietLanding = () => {
       <section className="max-w-6xl mx-auto px-4 py-8 md:py-16">
         <div className="grid md:grid-cols-2 gap-8 items-center">
           {/* Text Content */}
-          <div className="mb-6">
-            <h1 className="text-4xl md:text-6xl font-extrabold text-gray-900 mb-4">
-              <span className="block text-3xl md:text-4xl text-gray-700 mb-3">
-                Discover How To
-                <span className="relative ml-2">
-                  Melt Fat Effortlessly
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="absolute -right-6 -top-2 h-8 w-8 text-pink-500 animate-pulse"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                  >
-                    <path
-                      fillRule="evenodd"
-                      d="M12.395 2.553a1 1 0 00-1.45-.385c-.345.23-.614.558-.822.88-.214.33-.403.713-.57 1.116-.334.804-.614 1.768-.84 2.734a31.365 31.365 0 00-.613 3.58 2.64 2.64 0 01-.945-1.067c-.328-.68-.398-1.534-.398-2.654A1 1 0 005.05 6.05 6.981 6.981 0 003 11a7 7 0 1011.95-4.95c-.592-.591-.98-.985-1.348-1.467-.363-.476-.724-1.063-1.207-2.03zM12.12 15.12A3 3 0 017 13s.879.5 2.5.5c0-1 .5-4 1.25-4.5.5 1 .786 1.293 1.371 1.879A2.99 2.99 0 0113 13a2.99 2.99 0 01-.879 2.121z"
-                      clipRule="evenodd"
-                    />
-                  </svg>
-                </span>
-              </span>
+          <div className="order-1 md:order-1">
+            <h1 className="text-3xl md:text-5xl font-extrabold text-gray-900 mb-6 relative">
+              {/* Decorative elements */}
+              <div className="absolute -top-5 -left-3 bg-yellow-400 text-yellow-900 text-xs md:text-sm font-bold px-3 py-1 rounded-full transform rotate-[-8deg] z-10 shadow-md animate-pulse">
+                PROVEN RESULTS!
+              </div>
 
-              <span className="relative inline-block mt-4">
-                <span className="bg-gradient-to-r from-green-500 to-emerald-600 text-white px-6 py-3 rounded-xl inline-block cursor-pointer shadow-xl transform transition-all duration-300 hover:scale-105 group">
+              <div className="absolute -bottom-5 right-10">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-16 w-16 text-green-500 opacity-30 animate-ping"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                    clipRule="evenodd"
+                  />
+                </svg>
+              </div>
+
+              {/* Headline Content */}
+              <div className="relative z-0">
+                <span className="block mb-3 text-gray-700">Lose</span>
+
+                <span className="relative inline-block group">
+                  <span className="absolute -inset-1 bg-gradient-to-r from-green-400 to-emerald-600 rounded-lg blur opacity-25 group-hover:opacity-75 transition-all duration-300"></span>
                   <a href="https://ab1a76i3k0s6uhfi1kydm9qc8e.hop.clickbank.net">
-                    <span className="relative z-10">
-                      Lose 10-15lbs in Just 21 Days!
+                    <span className="relative bg-gradient-to-r from-green-500 to-emerald-700 text-white px-4 py-2 rounded-lg shadow-lg transform transition duration-300 group-hover:scale-105 inline-block cursor-pointer">
+                      10-15lbs in 21 Days
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
-                        className="h-6 w-6 inline-block ml-3 mb-1 animate-bounce group-hover:animate-spin"
+                        className="h-5 w-5 inline-block ml-2 mb-1 animate-bounce"
                         viewBox="0 0 20 20"
                         fill="currentColor"
                       >
@@ -81,52 +86,85 @@ const SmoothieDietLanding = () => {
                       </svg>
                     </span>
                   </a>
-                  <div className="absolute inset-0 bg-gradient-to-r from-emerald-700 to-green-800 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 </span>
-              </span>
 
-              <span className="block mt-6 text-3xl md:text-4xl leading-tight text-gray-800">
-                Without Starving - Enjoy The
-                <span className="relative ml-3 font-bold text-transparent bg-clip-text bg-gradient-to-r from-yellow-500 to-orange-500">
-                  Delicious Smoothie Solution!
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="absolute -right-8 -top-3 h-10 w-10 text-green-500 animate-bounce"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                  >
-                    <path
-                      fillRule="evenodd"
-                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                      clipRule="evenodd"
-                    />
-                  </svg>
+                <span className="block mt-4 leading-tight">
+                  Without Starving - The
+                  <span className="relative ml-2">
+                    <span className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-yellow-500 to-orange-500">
+                      Delicious Smoothie Solution!
+                    </span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="absolute -right-6 -top-2 h-8 w-8 text-pink-500 animate-pulse"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                    >
+                      <path
+                        fillRule="evenodd"
+                        d="M10 2a4 4 0 00-4 4v1H5a1 1 0 00-.994.89l-1 9A1 1 0 004 18h12a1 1 0 00.994-1.11l-1-9A1 1 0 0015 7h-1V6a4 4 0 00-4-4zm2 5V6a2 2 0 10-4 0v1h4zm-6 3a1 1 0 112 0 1 1 0 01-2 0zm7-1a1 1 0 100 2 1 1 0 000-2z"
+                        clipRule="evenodd"
+                      />
+                    </svg>
+                  </span>
                 </span>
-              </span>
+              </div>
             </h1>
 
-            <p className="mt-6 text-xl md:text-2xl text-gray-700 max-w-2xl bg-blue-50 p-4 rounded-lg border-l-4 border-blue-500">
-              <span className="font-bold text-blue-600">
-                Join 37,000+ People
-              </span>{" "}
-              Who Melted Stubborn Fat With This
-              <span className="inline-flex items-center ml-2 bg-green-100 text-green-800 px-2 py-1 rounded-full text-sm font-bold">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-4 w-4 mr-1"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                >
-                  <path
-                    fillRule="evenodd"
-                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                    clipRule="evenodd"
-                  />
-                </svg>
-                Doctor-Approved
-              </span>
-              Smoothie Diet System
+            <p className="mt-4 md:mt-6 text-lg md:text-xl text-gray-600">
+              Join 37,000+ People Who Melted Stubborn Fat With This
+              Doctor-Approved Smoothie Diet System
             </p>
+
+            {/* Timer Section - Improved Padding */}
+            <div className="mt-6 bg-yellow-100 border-l-4 border-yellow-500 p-4 rounded-md">
+              <h2 className="font-bold text-lg">⚠️ Limited Time Offer:</h2>
+              <div className="flex justify-center space-x-2 md:space-x-4 mt-3">
+                {/* Timer boxes with better spacing */}
+                {[
+                  { value: timeLeft.hours, label: "HOURS" },
+                  { value: timeLeft.minutes, label: "MINUTES" },
+                  { value: timeLeft.seconds, label: "SECONDS" },
+                ].map((item, index) => (
+                  <div key={index} className="flex flex-col items-center">
+                    <span className="text-xl md:text-2xl font-bold bg-red-600 text-white px-2 py-1 md:px-3 rounded w-14 md:w-16">
+                      {item.value.toString().padStart(2, "0")}
+                    </span>
+                    <span className="block text-xs md:text-sm mt-1">
+                      {item.label}
+                    </span>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            <a
+              href="https://ab1a76i3k0s6uhfi1kydm9qc8e.hop.clickbank.net"
+              className="mt-6 block w-full text-center bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-6 rounded-lg shadow-lg transition duration-300"
+            >
+              YES! I WANT MY CUSTOM SMOOTHIE PLAN NOW! →
+            </a>
+
+            {/* Security Badge */}
+            <div className="mt-4 flex flex-col md:flex-row items-center justify-center space-y-2 md:space-y-0 md:space-x-4">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-6 w-6 text-green-600"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
+                />
+              </svg>
+              <span className="text-gray-600 text-sm">
+                256-Bit Encrypted Secure Checkout
+              </span>
+            </div>
           </div>
 
           {/* Image Section - Improved Layout */}
